@@ -1,4 +1,8 @@
-include "main.h"
+
+
+
+
+#include "main.h"
 /**
  * print_sign - Determines whether an integer is positive, negative or zero.
  * @n: the number to be checked.
@@ -26,4 +30,4 @@ int print_sign(int n)
 		_putchar('-');
 		return ('/');
 	}
-}
+
