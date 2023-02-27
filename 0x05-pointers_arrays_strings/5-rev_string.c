@@ -1,21 +1,28 @@
 #include "main.h"
+
 /**
- * puts2 - prints a str, followed by a new line,
- * @str: pointer to the string to print
+ * rev_string - reverses a string
+ * @s: string to reverse
+ *
  * Return: void
-*/
+ */
 
-void puts2(char *str)
+
+void rev_string(char *s)
 {
-int index = 0;
-while (str[index] != '\0')
-{
-	if (index % 2 == 0)
+	int i = 0, j = 0;
+	char str[500];
+
+	while (*(s + i))
 	{
-		_putchar(str[index]);
+		*(str + i) = *(s + i);
+		i++;
 	}
-
-	index++;
-}
-_putchar('\n');
+	i = i - 1;
+	while (i >= 0)
+	{
+		*(s + i) = *(str + j);
+		j++;
+		i--;
+	}
 }
